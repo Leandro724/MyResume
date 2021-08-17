@@ -3,202 +3,225 @@
   <head>
     <title>My Resume</title>
 
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+
+    <!-- CSS Stylsheet -->
     <link rel="stylesheet" type="text/css" href="css/stylesheet.css">
+    <!-- Font Awesome ICONS -->
     <script src="https://use.fontawesome.com/5966ab9ace.js"></script>
-  </head>
+    
+</head>
 <body>
  <!-- Header Section -->
-    <header>
+    <header class="container">
       
     </header>
     <!--End of Header  -->
 
     <!-- Main Section -->
-      <section>
-          <!-- Left Side Of Resume -->
-          <div class="resume_left">
-              <!-- Profile Image -->
-              <div class="resume_profile">
-            <picture>
-                <source media="(max-width: 768px" srcset="Images/Face.PNG">
-                <source media="(max-width: 1024px" srcset="Images/Shoulders.PNG">
-                <img id ="img" src="Images/Waist.JPG"alt="Headshot image">
-            </picture>
-              </div>
-              <!-- End of Image section -->
+      <main class="container">
 
-              <!-- Rest of the content in the left section -->
-              <div class="resume_content">
-                    <div class="resume_item resume_info">
-                       <div class="title">
-                           <p class="bold">
-                               Leandro Antonio
-                           </p>
-                           <p class="regular">
-                               Web Developer
-                           </p>
-                       </div>
-                       <ul>
-                           <li>
-                               <div class="icon"><i class="fa fa-map-signs" aria-hidden="true"></i></div>
-                                <div class="data">
-                                    36 Trevor Siljeur rd, Vrygrond
-                                    <br/>
-                                     Cape Town 
-                                    <br/>
-                                    South Africa
+        <div class="row">
+
+            <!-- Left Side Of Resume -->
+                <div class="col-lg-4">
+                    <div class="container">
+
+                        <div class="row">
+                            <!-- Profile Image -->
+                            <div class="col-md col-lg-12">
+                                <picture>
+                                    <source media="(max-width: 768px" srcset="Images/Face.PNG">
+                                    <source media="(max-width: 1024px" srcset="Images/Shoulders.PNG">
+                                    <img id ="img" src="Images/Waist.JPG"alt="Headshot image">
+                                </picture>
+                            </div>
+                            <!-- End of Image section -->
+
+                            <!-- Rest of the content in the left section -->
+                            <div class="col-md">
+                                <div class="resume_content">
+                                    
+                                        <div class="title">
+                                            <p class="bold">
+                                                Leandro Antonio
+                                            </p>
+                                            <p class="regular">
+                                                Web Developer
+                                            </p>
+                                        </div>
+                                        <ul>
+                                            <li>
+                                                <div class="icon"><i class="fa fa-map-signs" aria-hidden="true"></i></div>
+                                                    <div class="data">
+                                                        36 Trevor Siljeur rd, Vrygrond
+                                                        <br/>
+                                                        Cape Town 
+                                                        <br/>
+                                                        South Africa
+                                                    </div>
+                                            </li>
+                                            <li>
+                                                    <div class="icon"><i class="fa fa-mobile" aria-hidden="true"></i></div>
+                                                    <div class="data">
+                                                    +27 780881507
+                                                    </div>
+                                                </li>
+                                            <li>
+                                                <div class="icon">
+                                                    
+                                                    <a target="_blank" href="https://www.LeandroAntonio724@gmail.com"><i class="fa fa-envelope" aria-hidden="true"></i></a>
+                                                    
+                                                    </i></div>
+                                                <div class="data">
+                                                Leandro Antonio
+                                                </div>
+                                            </li>
+                                            
+                                        </ul>
+                                    
+                                        
+                                        <div class="title">
+                                                <p class="bold">
+                                                Skills
+                                                </p>
+                                        </div>
+
+                                        <div class="icons">
+
+                                                <div class="icon">
+                                                    <i class="fa fa-css3" aria-hidden="true"></i>
+                                                </div>
+
+                                                <div class="icon">
+                                                    <i class="fa fa-html5" aria-hidden="true"></i>
+                                                </div>
+
+                                        </div>
+                                            
+                                        <div class="title">
+                                                <p class="bold">
+                                                Social Media
+                                                </p>
+                                        </div>
+                                            
+                                        <div class="icons">
+
+                                                    <div class="icon">
+                                                        <a target="_blank" href="https://www.facebook.com/"><i class="fa fa-facebook-official" aria-hidden="true"></i></a>
+                                                    </div>
+                                                    
+                                                    <div class="icon">
+                                                        <a target="_blank" href="https://www.linkedin.com/"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+                                                    </div>
+                                            
+                                                    <div class="icon">
+                                                        <a target="_blank" href="https://www.facebook.com/"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+                                                    </div>
+                                            </div>
+                                                
+                                        
                                 </div>
-                           </li>
-                           <li>
-                                <div class="icon"><i class="fa fa-mobile" aria-hidden="true"></i></div>
-                                <div class="data">
-                                   +27 780881507
+                            </div>
+                        <!-- End of content -->
+                        </div>
+
+                    </div>
+                </div>
+            <!-- End of Left Side -->
+
+            <!-- Right Side Of Resume -->
+
+                <div class="col-lg-8">
+                    
+                    <div class="resume_item resume_about">
+                            <div class="title">
+                            <p class="bold">
+                                About Me
+                            </p>
+                            </div>
+                            <p>I'm a 21 year old Web Developer who's very passionate about technology and Artificial Intelligence</p>
+                    </div>
+                    <div class="resume_item resume_work">
+                        <div class="title">
+                            <p class="bold">
+                                Work Experience
+                            </p>
+                        </div>
+                        <ul>
+                            <li>
+                                <div class="date">2021</div>
+                                <div class="info">
+                                    <p class="semi-bold">Canteen Staff Member</p>
+                                    <p>As a canteen staff member our dutiy was to provide food for the staff members of a International Call Center.</p>
                                 </div>
                             </li>
-                        <li>
-                            <div class="icon">
-                                
-                                <a target="_blank" href="https://www.LeandroAntonio724@gmail.com"><i class="fa fa-envelope" aria-hidden="true"></i></a>
-                                
-                                </i></div>
-                            <div class="data">
-                               Leandro Antonio
-                            </div>
-                        </li>
-                        
-                       </ul>
+                            <li>
+                                <div class="date">2020</div>
+                                <div class="info">
+                                    <p class="semi-bold">Primerius (Head Student) of the House Comittee</p>
+                                    <p>The House Committee of a residence is responsible for making the best use of its annual budget. All events and student quiries are handle by  House Committees.</p>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="date">2019</div>
+                                <div class="info">
+                                    <p class="semi-bold">Brand Ambassador</p>
+                                    <p>Recruiting clients to choose South Point Student Accomodation as their place of residence.</p>
+                                </div>
+                            </li>
+                        </ul>
                     </div>
-                    <div class="resume_item resume_skills">
+                    <div class="resume_item resume_education">
                         <div class="title">
                             <p class="bold">
-                               Skills
+                                Education
                             </p>
                         </div>
-
-                        <div class="icons">
-
-                            <div class="icon">
-                                <i class="fa fa-css3" aria-hidden="true"></i>
-                            </div>
-
-                            <div class="icon">
-                                <i class="fa fa-html5" aria-hidden="true"></i>
-                            </div>
-
-                        </div>
-                        
+                        <ul>
+                            <li>
+                                <div class="date">2021</div>
+                                <div class="info">
+                                    <p class="semi-bold">CodeSpace Academy</p>
+                                    <p>Offers a variety of online coding course that can equip one to get jobs in sought after sectors.</p>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="date">2013-2017</div>
+                                <div class="info">
+                                    <p class="semi-bold">Muizenberg High School</p>
+                                    <p>This is where I attended High School and matriculated in the year 2017.</p>
+                                </div>
+                            </li>
+                        </ul>
                     </div>
-                    <div class="resume_item resume_social">
+                    <div class="resume_item resume_hobby">
                         <div class="title">
                             <p class="bold">
-                               Social Media
+                                Hobbies
                             </p>
                         </div>
-                        
-                                <div class="icons">
+                        <ul>
+                            <li><i class="fa fa-music" aria-hidden="true"></i></li>
 
-                                <div class="icon">
-                                    <a target="_blank" href="https://www.facebook.com/"><i class="fa fa-facebook-official" aria-hidden="true"></i></a>
-                                </div>
-                                
-                                <div class="icon">
-                                    <a target="_blank" href="https://www.linkedin.com/"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
-                                </div>
-                           
-                                <div class="icon">
-                                    <a target="_blank" href="https://www.facebook.com/"><i class="fa fa-instagram" aria-hidden="true"></i></a>
-                                </div>
-                            </div>
+                            <li><i class="fa fa-podcast" aria-hidden="true"></i></li>
                             
+                            <li><i class="fa fa-film" aria-hidden="true"></i></li>
+                            
+                        </ul>
                     </div>
-              </div>
-              <!-- End of content -->
-          </div>
-          <!-- End of Left Side -->
-
-          <!-- Right Side Of Resume -->
-          <div class="resume_right">
-
-
-              <div class="resume_item resume_about">
-                    <div class="title">
-                      <p class="bold">
-                          About Me
-                      </p>
-                    </div>
-                      <p>I'm a 21 year old Web Developer who's very passionate about technology and Artificial Intelligence</p>
-              </div>
-              <div class="resume_item resume_work">
-                <div class="title">
-                    <p class="bold">
-                        Work Experience
-                    </p>
-                </div>
-                <ul>
-                    <li>
-                        <div class="date">2021</div>
-                        <div class="info">
-                            <p class="semi-bold">Canteen Staff Member</p>
-                            <p>As a canteen staff member our dutiy was to provide food for the staff members of a International Call Center.</p>
-                        </div>
-                    </li>
-                    <li>
-                        <div class="date">2020</div>
-                        <div class="info">
-                            <p class="semi-bold">Primerius (Head Student) of the House Comittee</p>
-                            <p>The House Committee of a residence is responsible for making the best use of its annual budget. All events and student quiries are handle by  House Committees.</p>
-                        </div>
-                    </li>
-                    <li>
-                        <div class="date">2019</div>
-                        <div class="info">
-                            <p class="semi-bold">Brand Ambassador</p>
-                            <p>Recruiting clients to choose South Point Student Accomodation as their place of residence.</p>
-                        </div>
-                    </li>
-                </ul>
-              </div>
-              <div class="resume_item resume_education">
-                <div class="title">
-                    <p class="bold">
-                        Education
-                    </p>
-                </div>
-                <ul>
-                    <li>
-                        <div class="date">2021</div>
-                        <div class="info">
-                            <p class="semi-bold">CodeSpace Academy</p>
-                            <p>Offers a variety of online coding course that can equip one to get jobs in sought after sectors.</p>
-                        </div>
-                    </li>
-                    <li>
-                        <div class="date">2013-2017</div>
-                        <div class="info">
-                            <p class="semi-bold">Muizenberg High School</p>
-                            <p>This is where I attended High School and matriculated in the year 2017.</p>
-                        </div>
-                    </li>
-                </ul>
-              </div>
-              <div class="resume_item resume_hobby">
-                <div class="title">
-                    <p class="bold">
-                        Hobbies
-                    </p>
-                </div>
-                <ul>
-                    <li><i class="fa fa-music" aria-hidden="true"></i></li>
-
-                    <li><i class="fa fa-podcast" aria-hidden="true"></i></li>
                     
-                    <li><i class="fa fa-film" aria-hidden="true"></i></li>
-                    
-                </ul>
-              </div>
-          </div>
-          <!-- End of Right Side -->
-      </section>
+                </div>
+            <!-- End of Right Side -->
+            </div>
+
+        </main>
     <!-- End of Main Section -->
+
+    <!-- Bootstrap Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous">
+    </script>
+    <!-- End of Scripts -->
 </body>
 </html>
