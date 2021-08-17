@@ -54,14 +54,14 @@ header {
 
 /* Sections General */
 
-    section{
+    main{
       display: flex;
       width: 100%;
     }
-    section .title{
+    main .title{
         margin-bottom:20px;
       }
-      section .resume_item{
+      main .resume_item{
         padding: 25px 0;
         border-bottom: 2px solid #eb8948;
       }  
@@ -69,41 +69,44 @@ header {
 /* End of Section */
 
 /* Left Side of the Resume */
+.col-md{
+    padding: 10px;
+}
 
-    section .resume_left{
+    main .col-lg-4{
       background: #3e3f42 ;
       width: 25%;
     }
-    section .resume_left .resume_profile{
+    main .col-lg-4 .resume_profile{
       padding: 10px;
     }
-    section .resume_left .resume_profile img{
+    main .col-lg-4 .resume_profile img{
       width: 100%; 
       height: 100%;
     }
-    section .resume_left .resume_content{
+    main .col-lg-4 .resume_content{
       padding: 10px 25px;
     }
     
-    section .resume_left .bold{
+    main .col-lg-4 .bold{
       color: #fff;
     }
-    section .resume_left .regular{
+    main .col-lg-4 .regular{
       color: #e47022;
     }
     
-    section .resume_left .resume_item:last-child,section .resume_right .resume_item:last-child{
+    main .col-lg-4 .resume_item:last-child,main .col-lg-8 .resume_item:last-child{
       border: 0px;
     }
-    section .resume_left ul li{
+    main .col-lg-4 ul li{
       display: flex;
       align-items: center;
       margin-bottom: 10px;
     }
-    section .resume_left ul li:last-child{
+    main .col-lg-4 ul li:last-child{
       margin-bottom: 0;
     }
-    section .resume_left ul li .icon{
+    main .col-lg-4 ul li .icon{
       width: 35px;
       height: 35px;
       color: #e47022;
@@ -114,22 +117,33 @@ header {
       border: 1.9px dashed;
       
     }
+    main .col-lg-4  .icon, .icon{
+        width: 35px;
+        height: 35px;
+        color: #e47022;
+        border-radius: 50%;
+        margin-right: 15px;
+        font-size: 27px;
+        position: relative;
+        padding: 20px;
+        border: 2px dashed;
+      }
 
 /* End of Left Section */
 
 /* Right Section of the Resume */
-    section .icon i,section .resume_right .resume_hobby ul li i{
+    main .icon i,main .col-lg-8 .resume_hobby ul li i{
       position: absolute;
       top:50%;
       left: 50%;
       transform: translate(-50%,-50%);
     }
-    section .resume_left ul li .data{
+    main .col-lg-4 ul li .data{
       color: #e47022;
   
     }
    
-    section .resume_left .resume_social .icon,.resume_skills .icon{
+    main .col-lg-4 .resume_social .icon,.resume_skills .icon{
       width: 35px;
       height: 35px;
       color: #e47022;
@@ -141,37 +155,37 @@ header {
       border: 2px dashed;
     }
     
-    section .resume_left .icons{
+    main .col-lg-4 .icons{
       display: flex;
     }
-    section .resume_right{
+    main .col-lg-8{
       
       background: rgb(167, 160, 160);
       padding: 25px;
       width: 100%;
       
     }
-    section .resume_right .resume_work ul,section .resume_right .resume_education ul{
+    main .col-lg-8 .resume_work ul,main .col-lg-8 .resume_education ul{
       padding-left: 40px;
       overflow: hidden;
       
     }
-    section .resume_right ul li{
+    main .col-lg-8 ul li{
       position: relative;
     }
-    section .resume_right ul li .date{
+    main .col-lg-8 ul li .date{
       font-size: 16px;
       font-weight: 500;
       margin-bottom: 15px;
     }
-    section .resume_right ul li .info{
+    main .col-lg-8 ul li .info{
       margin-bottom: 20px;
     }
-    section .resume_right ul li:last-child .info{
+    main .col-lg-8 ul li:last-child .info{
       margin-bottom: 0;
     }
-    section .resume_right .resume_work ul li:before,
-    section .resume_right .resume_education ul li::before{
+    main .col-lg-8 .resume_work ul li:before,
+    section .col-lg-8 .resume_education ul li::before{
       content: "";
       position: absolute;
       top:5px;
@@ -182,8 +196,8 @@ header {
       border-radius: 50%;
       border:2px solid #e47022;
     }
-    section .resume_right .resume_work ul li:after,
-    section .resume_right .resume_education ul li::after{
+    main .col-lg-8 .resume_work ul li:after,
+    main .col-lg-8 .resume_education ul li::after{
       content: "";
       position: absolute;
       top:14px; 
@@ -192,11 +206,11 @@ header {
       height:92px;
       background: #e47022;
     }
-    section .resume_right .resume_hobby ul{
+    main .col-lg-8 .resume_hobby ul{
       display: flex;
       justify-content: space-between;
     }
-    section .resume_right .resume_hobby ul li{
+    main .col-lg-8 .resume_hobby ul li{
       width: 80px;
       height: 80px;
       border: 2px solid #e47022;
@@ -206,12 +220,12 @@ header {
       color: #e47022;
   
     }
-    section .resume_right .resume_hobby ul li i{
+    main .col-lg-8 .resume_hobby ul li i{
       font-size: 30px;
   
     }
     
-    section .resume_right .resume_hobby ul li:last-child:before{
+    main .col-lg-8 .resume_hobby ul li:last-child:before{
   display:none;
     }
 /* End of Right Section */
