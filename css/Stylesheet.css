@@ -223,4 +223,91 @@ header {
     width: 100%;
   }
 /* End of Profile Image */
-  
+
+/* Display for Tablets */
+@media screen and (max-width:1024px) {
+    section {
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+    }
+    section .resume_left{
+      width: 100%;
+      display: flex;
+      
+    }
+    section .resume_right{
+      margin-right: auto;
+    }
+    section .resume_left .resume_profile{
+      width: 45%;
+    }
+    section .resume_left .resume_content{
+     
+      width: 45%;
+      
+    }
+    header {
+      text-align: center;
+        color: #fff;
+        background-color: rgb(58, 58, 63);
+        margin-bottom: auto;
+        padding-top: 50px;
+        width: 100%;
+        height: 40px;
+        margin-right: 100%;
+        background-image:url(../Images/HeaderImg.PNG);
+        background-size: 40%;
+        background-repeat: no-repeat;
+        background-position-x: center;
+    
+      }
+  }
+
+/* End of Tablets Display */
+
+/* Display for Mobile Devices */
+  @media screen and (max-width:768px) {
+    section {
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+    }
+    section .resume_left{
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+    }
+    section .resume_right{
+      width: inherit;
+      
+    }
+    section .resume_left .resume_profile{
+      width: 100%;
+      height: 400px;
+    }
+    section .resume_left .resume_content{
+      width: 100%;
+    }
+    header {
+      text-align: center;
+        color: #fff;
+        background-color: rgb(58, 58, 63);
+        margin-bottom: auto;
+        padding-top: 50px;
+        width: 100%;
+        height: 40px;
+        margin-right: 100%;
+        background-image:url(../Images/HeaderImg.PNG);
+        background-size: 50%;
+        background-repeat: no-repeat;
+        background-position-x:center;
+    
+      }
+      #img{
+        border-radius: 5%;
+        height: 100%;
+        width: 100%;
+      }
+  }
+/* End of Mobile Devices */
