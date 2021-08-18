@@ -10,7 +10,7 @@ header {
       height: 70px;
       margin:auto;
       background-image:url(../Images/HeaderImg.PNG);
-      background-size: 40%;
+      background-size: 25%;
       background-repeat: no-repeat;
       background-position-x: center;
   
@@ -40,6 +40,9 @@ header {
       line-height: 22px;
       color: rgb(59, 58, 58);
       background: #585c68;
+    }
+    .h1,.h2{
+      text-transform: uppercase;
     }
     
 /* End of General */
@@ -105,8 +108,8 @@ header {
       
     }
     main .col-lg-4  .icon, .icon{
-        width: 35px;
-        height: 35px;
+        width: 70px;
+        height: 70px;
         color: #e47022;
         border-radius: 50%;
         margin-right: 15px;
@@ -171,14 +174,14 @@ header {
       margin-bottom: 0;
     }
     main .col-lg-8 .resume_work ul li:before,
-    section .col-lg-8 .resume_education ul li::before{
+    main .col-lg-8 .resume_education ul li::before{
       content: "";
       position: absolute;
       top:5px;
       left:-25px;
       
-      width:6px;
-      height:6px;
+      width:10px;
+      height:10px;
       border-radius: 50%;
       border:2px solid #e47022;
     }
@@ -223,44 +226,21 @@ header {
     width: 100%;
   }
 /* End of Profile Image */
+@media screen and (max-width:1199px) {
+    
+  header {
+    
+      background-size: 34%;
+   
+    }
+   
+}
 
 /* Display for Tablets */
 @media screen and (max-width:991px) {
-    section {
-      display: flex;
-      flex-direction: column;
-      width: 100%;
-    }
-    section .resume_left{
-      width: 100%;
-      display: flex;
-      
-    }
-    section .resume_right{
-      margin-right: auto;
-    }
-    section .resume_left .resume_profile{
-      width: 45%;
-    }
-    section .resume_left .resume_content{
-     
-      width: 45%;
-      
-    }
-    header {
-      text-align: center;
-        color: #fff;
-        background-color: rgb(58, 58, 63);
-        margin-bottom: auto;
-        padding-top: 50px;
-        width: 100%;
-        height: 40px;
-        margin-right: 100%;
-        background-image:url(../Images/HeaderImg.PNG);
-        background-size: 40%;
-        background-repeat: no-repeat;
-        background-position-x: center;
     
+    header {
+        background-size: 45%;
       }
   }
 
@@ -268,46 +248,12 @@ header {
 
 /* Display for Mobile Devices */
   @media screen and (max-width:768px) {
-    section {
-      display: flex;
-      flex-direction: column;
-      width: 100%;
-    }
-    section .resume_left{
-      width: 100%;
-      display: flex;
-      flex-direction: column;
-    }
-    section .resume_right{
-      width: inherit;
-      
-    }
-    section .resume_left .resume_profile{
-      width: 100%;
-      height: 400px;
-    }
-    section .resume_left .resume_content{
-      width: 100%;
-    }
-    header {
-      text-align: center;
-        color: #fff;
-        background-color: rgb(58, 58, 63);
-        margin-bottom: auto;
-        padding-top: 50px;
-        width: 100%;
-        height: 40px;
-        margin-right: 100%;
-        background-image:url(../Images/HeaderImg.PNG);
-        background-size: 50%;
-        background-repeat: no-repeat;
-        background-position-x:center;
     
+    header {
+      
+        background-size: 55%;
+     
       }
-      #img{
-        border-radius: 5%;
-        height: 100%;
-        width: 100%;
-      }
+     
   }
 /* End of Mobile Devices */
