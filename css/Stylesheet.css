@@ -133,18 +133,6 @@ header {
   
     }
    
-    main .col-lg-4 .resume_social .icon,.resume_skills .icon{
-      width: 35px;
-      height: 35px;
-      color: #e47022;
-      border-radius: 50%;
-      margin-right: 15px;
-      font-size: 30px;
-      position: relative;
-      padding: 20px;
-      border: 2px dashed;
-    }
-    
     main .col-lg-4 .icons{
       display: flex;
     }
