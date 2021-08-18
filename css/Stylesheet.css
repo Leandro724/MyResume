@@ -11,7 +11,7 @@
   overflow-y: auto;
   
 }
-/* End of Header */
+
 /* Desktop Navigation */
 .nav-menu {
   padding: 0;
@@ -81,8 +81,8 @@
 .nav-menu a:hover span, .nav-menu li:hover > a span {
   display: block;
 }
-/* End of navigation menu */
-/* Mobile Nav */
+
+
 /**
 * Mobile Navigation 
 */
@@ -115,6 +115,63 @@
   background-color: #e47022;
 }
 /* End of mobile nav */
+/* This is the Hero Section */
+#hero {
+  width: 100%;
+  height: 100vh;
+  background: #3e3f42;
+  background-size: cover;
+  position: relative;
+}
+
+@media (min-width: 992px) {
+  #hero {
+    padding-left: 160px;
+  }
+}
+
+#hero h1 {
+  font-weight: 700;
+}
+
+
+
+#hero p span {
+  color: #e47022;
+  letter-spacing: 1px;
+}
+
+#hero .social-links {
+  margin-top: 30px;
+}
+
+#hero .social-links a {
+  font-size: 45px;
+  display: inline-block;
+  color: #fff;
+  line-height: 1;
+  margin-right: 20px;
+  transition: 0.3s;
+}
+
+#hero .social-links a:hover {
+  color: #e47022;
+}
+
+@media (max-width: 992px) {
+  #hero {
+    text-align: center;
+  }
+  #hero h1 {
+    font-size: 32px;
+    line-height: 36px;
+  }
+  #hero p {
+    margin-top: 10px;
+    font-size: 20px;
+    line-height: 24px;
+  }
+}
 
 /* General Styling of the Document */
     #name{
