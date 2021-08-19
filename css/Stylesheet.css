@@ -11,6 +11,15 @@
   overflow-y: auto;
   
 }
+/* Body */
+body{
+  font-size:14px;
+  line-height: 22px;
+  color: rgb(59, 58, 58);
+  font-family:sans-serif;
+  background-color:rgb(167, 160, 160) ;
+}
+
 
 /* Desktop Navigation */
 .nav-menu {
@@ -83,9 +92,7 @@
 }
 
 
-/**
-* Mobile Navigation 
-*/
+/*Mobile Navigation*/
 .mobile-nav-toggle {
   position: fixed;
   right: 10px;
@@ -114,8 +121,9 @@
   color: #fff;
   background-color: #e47022;
 }
-/* End of mobile nav */
+
 /* This is the Hero Section */
+
 #hero {
   width: 100%;
   height: 100vh;
@@ -173,6 +181,11 @@
   }
 }
 /* General sections */
+*{
+    
+  list-style: none; 
+  
+}
 
 section {
   padding: 60px 0;
@@ -219,89 +232,54 @@ section {
 .section-title p {
   margin-bottom: 0;
 }
+#name{
+  font-weight: 700;
+  font-size: 20px;
+  text-transform: uppercase;
+}
+/* Skills section */
+.skills{
+  background-color:#3e3f42 ;
+  text-align: center;
+ 
+}
 
-/* General Styling of the Document */
-    #name{
-      font-weight: 700;
-      font-size: 20px;
-      text-transform: uppercase;
-    }
-    
-    *{
-      margin: 0;
-      padding: 0;
-      box-sizing: 0;
-      list-style: none; 
-      font-family:sans-serif;
-    }
-    a{
-      color: inherit;
-    }
-   
-    body{
-      font-size:14px;
-      line-height: 22px;
-      color: rgb(59, 58, 58);
-      background: #585c68;
-    }
-    .h1,.h2{
-      text-transform: uppercase;
-    }
-    
-/* End of General */
-
-/* Sections General */
-
-    
-    main .title{
-        margin-bottom:20px;
-      }
-      main .resume_item{
-        padding: 25px 0;
-        border-bottom: 2px solid #eb8948;
-      }  
-     
-      
-
-/* End of Section */
-
-/* Left Side of the Resume */
-
-
-.col-md{
-    padding: 10px;
+#carouselExampleIndicators{
+  padding: 60px;
+  padding-left: 100px;
+  padding-right: 100px;
+}
+.carousel-inner{
+  background-color: #e47022;
+  padding-bottom: 60px;
+  padding-top: 30px;
+  
   
 }
-.col-md .resume_content ul{
-  padding-left: 0;
+/* About Section */
+
+.about .content h3 {
+  font-weight: 700;
+  font-size: 26px;
+  color: #fff;
 }
-    main .col-lg-4{
-      background: #3e3f42 ;
-      padding: 0;
-    }
-   
-    
-    main .col-lg-4 .resume_content{
-      padding: 10px 25px;
-    }
-    
-    
-    main .col-lg-4 .regular{
-      color: #e47022;
-    }
-    
-    main .col-lg-4 .resume_item:last-child,main .col-lg-8 .resume_item:last-child{
-      border: 0px;
-    }
-    main .col-lg-4 ul li{
-      display: flex;
-      align-items: center;
-      margin-bottom: 10px;
-    }
-    main .col-lg-4 ul li:last-child{
-      margin-bottom: 0;
-    }
-    main .col-lg-4 ul li .icon{
+
+ 
+
+.about .content ul li {
+  margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+}
+
+.about .content p:last-child {
+  margin-bottom: 0;
+}
+
+
+/* End of skills sections */
+
+    main .icon{
       width: 35px;
       height: 35px;
       color: #e47022;
@@ -312,34 +290,18 @@ section {
       border: 1.9px dashed;
       
     }
-    main .col-lg-4  .icon, .icon{
-        width: 70px;
-        height: 70px;
+    main  .icon{
+        width: 60px;
+        height: 60px;
         color: #e47022;
         border-radius: 50%;
         margin-right: 15px;
-        font-size: 27px;
+        font-size: 20px;
         position: relative;
         padding: 20px;
         border: 2px dashed;
       }
-      #carouselExampleIndicators{
-        padding: 60px;
-        padding-left: 100px;
-        padding-right: 100px;
-      }
-      .carousel-inner{
-        background-color: #e47022;
-        padding-bottom: 60px;
-        padding-top: 30px;
-        
-        
-      }
-
-/* End of Left Section */
-
-/* Right Section of the Resume */
-
+     
 /* Resume Section */
 
 .resume .resume-title {
@@ -399,92 +361,227 @@ section {
   background: #45505b;
   border: 2px solid #e47022;
 }
-/* End of resume section */
+/* Contact section */
 
-    main .icon i,main .col-lg-8 .resume_hobby ul li i{
-      position: absolute;
-      top:50%;
-      left: 50%;
-      transform: translate(-50%,-50%);
-    }
-    main .col-lg-4 ul li .data{
-      color: #e47022;
-  
-    }
-   
-    main .col-lg-4 .icons{
-      display: flex;
-    }
-    main .col-lg-8{
-      
-      background: rgb(167, 160, 160);
-      padding: 25px;
-      
-    }
-    main .col-lg-8 .section-title ul,main .col-lg-8 .resume_education ul{
-      padding-left: 40px;
-      overflow: hidden;
-      
-    }
-    main .col-lg-8 ul li{
-      position: relative;
-    }
-    main .col-lg-8 ul li .date{
-      font-size: 16px;
-      font-weight: 500;
-      margin-bottom: 15px;
-    }
-    main .col-lg-8 ul li .info{
-      margin-bottom: 20px;
-    }
-    main .col-lg-8 ul li:last-child .info{
-      margin-bottom: 0;
-    }
-    main .col-lg-8 .resume_work ul li:before,
-    main .col-lg-8 .resume_education ul li::before{
-      content: "";
-      position: absolute;
-      top:5px;
-      left:-25px;
-      
-      width:10px;
-      height:10px;
-      border-radius: 50%;
-      border:2px solid #e47022;
-    }
-    main .col-lg-8 .resume_work ul li:after,
-    main .col-lg-8 .resume_education ul li::after{
-      content: "";
-      position: absolute;
-      top:14px; 
-      left:-21px;
-      width:2px;
-      height:92px;
-      background: #e47022;
-    }
-    main .col-lg-8 .resume_hobby ul{
-      display: flex;
-      justify-content: space-between;
-    }
-    main .col-lg-8 .resume_hobby ul li{
-      width: 80px;
-      height: 80px;
-      border: 2px solid #e47022;
-      border-radius: 50%;
-      border-style: dashed;
-      position: relative;
-      color: #e47022;
-  
-    }
-    main .col-lg-8 .resume_hobby ul li i{
-      font-size: 30px;
-  
-    }
-    
-    main .col-lg-8 .resume_hobby ul li:last-child:before{
-  display:none;
-    }
-/* End of Right Section */
+#heading{
+  color: #e47022;
+}
+
+#contact{
+  background-color:#3e3f42 ;
+}
+.contact .info {
+  width: 100%;
+  background: #3e3f42;
+}
+
+.contact .info i {
+  font-size: 20px;
+  color: #e47022;
+  float: left;
+  width: 44px;
+  height: 44px;
+  background: #eef7ff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50px;
+  transition: all 0.3s ease-in-out;
+}
+
+.contact .info h4 {
+  padding: 0 0 0 60px;
+  font-size: 22px;
+  font-weight: 600;
+  margin-bottom: 5px;
+  color: #e47022;
+}
+
+.contact .info p {
+  padding: 0 0 0 60px;
+  margin-bottom: 0;
+  font-size: 14px;
+  color: #fff;
+}
+
+.contact .info .email, .contact .info .phone {
+  margin-top: 40px;
+}
+
+.contact .info .email:hover i, .contact .info .address:hover i, .contact .info .phone:hover i {
+  background: #e47022;
+  color: #fff;
+}
+
+.contact .php-email-form {
+  width: 100%;
+  background: #3e3f42;
+}
+
+.contact .php-email-form .form-group {
+  padding-bottom: 8px;
+}
+
+.contact .php-email-form .error-message {
+  display: none;
+  color: #fff;
+  background: #ed3c0d;
+  text-align: left;
+  padding: 15px;
+  font-weight: 600;
+}
+
+.contact .php-email-form .error-message br + br {
+  margin-top: 25px;
+}
+
+.contact .php-email-form .sent-message {
+  display: none;
+  color: #fff;
+  background: #18d26e;
+  text-align: center;
+  padding: 15px;
+  font-weight: 600;
+}
+
+.contact .php-email-form .loading {
+  display: none;
+  background: #fff;
+  text-align: center;
+  padding: 15px;
+}
+
+.contact .php-email-form .loading:before {
+  content: "";
+  display: inline-block;
+  border-radius: 50%;
+  width: 24px;
+  height: 24px;
+  margin: 0 10px -6px 0;
+  border: 3px solid #18d26e;
+  border-top-color: #eee;
+  -webkit-animation: animate-loading 1s linear infinite;
+  animation: animate-loading 1s linear infinite;
+}
+
+.contact .php-email-form input, .contact .php-email-form textarea {
+  border-radius: 4px;
+  box-shadow: none;
+  font-size: 14px;
+}
+
+.contact .php-email-form input {
+  height: 44px;
+}
+
+.contact .php-email-form textarea {
+  padding: 10px 12px;
+}
+
+.contact .php-email-form button[type="submit"] {
+  background: #e47022;
+  border: 0;
+  padding: 10px 35px;
+  color: #fff;
+  transition: 0.4s;
+  border-radius: 50px;
+}
+
+.contact .php-email-form button[type="submit"]:hover {
+  background: #e47022;
+}
+
+/* Footer section */
+#footer {
+  background: rgb(167, 160, 160);
+  color: #45505b;
+  font-size: 14px;
+  text-align: center;
+  padding: 30px 0;
+}
+
+#footer h3 {
+  font-size: 36px;
+  font-weight: 700;
+  position: relative;
+  font-family: "Poppins", sans-serif;
+  padding: 0;
+  margin: 0 0 15px 0;
+}
+
+#footer p {
+  font-size: 15;
+  font-style: italic;
+  padding: 0;
+  margin: 0 0 40px 0;
+}
+
+#footer .social-links {
+  margin: 0 0 40px 0;
+}
+
+#footer .social-links a {
+  font-size: 18px;
+  display: inline-block;
+  background: #e47022;
+  color: #fff;
+  line-height: 1;
+  padding: 8px 0;
+  margin-right: 4px;
+  border-radius: 50%;
+  text-align: center;
+  width: 32px;
+  height: 32px;
+  transition: 0.3s;
+}
+
+#footer .social-links a:hover {
+  background: #ca8150;
+  color: #fff;
+  text-decoration: none;
+}
+
+#footer .copyright {
+  margin: 0 0 5px 0;
+}
+
+#footer .credits {
+  font-size: 13px;
+}
+
+/* Back to top button */
+.back-to-top {
+  position: fixed;
+  visibility: hidden;
+  opacity: 0;
+  right: 15px;
+  bottom: 15px;
+  z-index: 996;
+  background: #e47022;
+  width: 40px;
+  height: 40px;
+  border-radius: 50px;
+  transition: all 0.4s;
+}
+
+.back-to-top i {
+  font-size: 28px;
+  color: #fff;
+  line-height: 0;
+}
+
+.back-to-top:hover {
+  background: #df7f3f;
+  color: #fff;
+}
+
+.back-to-top.active {
+  visibility: visible;
+  opacity: 1;
+}
+/* End of button */
+
+ 
 
 /* Profile Image */
   #img{
@@ -493,6 +590,13 @@ section {
     width: 100%;
   }
 /* End of Profile Image */
+
+/* Display for Laptops and large screens */
+@media (min-width: 992px) {
+  #main {
+    margin-left: 100px;
+  }
+}
 
 
 /* Display for Tablets */
@@ -505,22 +609,3 @@ section {
   }
 }
 
-@media (min-width: 992px) {
-  #main {
-    margin-left: 100px;
-  }
-}
-
-/* End of Tablets Display */
-
-/* Display for Mobile Devices */
-  @media screen and (max-width:768px) {
-    
-    header {
-      
-        background-size: 55%;
-     
-      }
-     
-  }
-/* End of Mobile Devices */
