@@ -323,6 +323,18 @@ section {
         padding: 20px;
         border: 2px dashed;
       }
+      #carouselExampleIndicators{
+        padding: 60px;
+        padding-left: 100px;
+        padding-right: 100px;
+      }
+      .carousel-inner{
+        background-color: #e47022;
+        padding-bottom: 60px;
+        padding-top: 30px;
+        
+        
+      }
 
 /* End of Left Section */
 
