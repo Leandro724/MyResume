@@ -127,9 +127,10 @@ body{
 #hero {
   width: 100%;
   height: 100vh;
-  background: #3e3f42;
   background-size: cover;
   position: relative;
+  background: url("../Images/hero.png") top right no-repeat;
+    
 }
 
 @media (min-width: 992px) {
@@ -138,11 +139,13 @@ body{
   }
 }
 
+
 #hero h1 {
+  margin: 0;
+  font-size: 64px;
   font-weight: 700;
+  line-height: 56px;
 }
-
-
 
 #hero p span {
   color: #e47022;
@@ -258,13 +261,18 @@ section {
 }
 /* About Section */
 
+/* About Section */
+
 .about .content h3 {
   font-weight: 700;
   font-size: 26px;
   color: #fff;
 }
 
- 
+.about .content ul {
+  list-style: none;
+  padding: 0;
+}
 
 .about .content ul li {
   margin-bottom: 20px;
@@ -272,10 +280,20 @@ section {
   align-items: center;
 }
 
+.about .content ul strong {
+  margin-right: 10px;
+}
+
+.about .content ul i {
+  font-size: 20px;
+  margin-right: 5px;
+  color: #e47022;
+  line-height: 0;
+}
+
 .about .content p:last-child {
   margin-bottom: 0;
 }
-
 
 /* End of skills sections */
 
@@ -300,6 +318,12 @@ section {
         position: relative;
         padding: 20px;
         border: 2px dashed;
+      }
+      main .icon i,main ul li i{
+        position: absolute;
+        top:50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
       }
      
 /* Resume Section */
